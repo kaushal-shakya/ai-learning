@@ -1,2 +1,2 @@
 # ai-learning
-ai practice classes
+ai practice
