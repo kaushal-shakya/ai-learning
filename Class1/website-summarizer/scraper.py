@@ -1,6 +1,7 @@
 # pip install requests beautifulsoup4
-import requests
-from bs4 import BeautifulSoup
+import requests # https://docs.python-requests.org/en/stable/?utm_source=chatgpt.com : It is a library for making HTTP requests in Python. It simplifies the process of sending HTTP requests and handling responses.
+
+from bs4 import BeautifulSoup 
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -12,7 +13,7 @@ HEADERS = {
 
 def fetch_website_contents(url):
     # add scheme if the user forgot it
-    if not url.startswith(("http://", "https://")):
+    if not url.startswith(("http://", "https://")): 
         url = "https://" + url
 
     try:
