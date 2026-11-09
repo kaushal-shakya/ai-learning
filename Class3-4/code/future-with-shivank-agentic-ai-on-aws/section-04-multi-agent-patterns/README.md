@@ -1,0 +1,26 @@
+# Section 4 — Multi-Agent Patterns
+
+| Notebook | Pattern | Example |
+|---|---|---|
+| `01_supervisor_worker.ipynb` | Supervisor–worker | Market research: news, financial and sentiment workers coordinated by a supervisor |
+| `02_agent_as_tool.ipynb` | Agent as tool | Tutoring: a teacher delegates to math, writing and science tutors |
+| `03_graph_pattern.ipynb` | Graph | E-commerce orders routed through risk, fraud, inventory, shipping and refund steps |
+| `04_swarm_pattern.ipynb` | Swarm | Game level design: four specialists hand work to each other |
+
+## Run
+
+```bash
+pip install -r requirements.txt
+export TAVILY_API_KEY="tvly-..."          # notebook 1 (free key at tavily.com)
+export ALPHA_VANTAGE_API_KEY="..."        # optional
+jupyter lab
+```
+
+## Choosing a pattern
+
+| Pattern | Who decides the route | Use when |
+|---|---|---|
+| Supervisor–worker | A central supervisor | Parallel research; combining specialist answers |
+| Agent as tool | The orchestrator, which stays in control | Simple delegation |
+| Graph | Your code (conditional edges) | Fixed, auditable procedures |
+| Swarm | The agents, via handoffs | Creative or iterative work where the path can't be predicted |

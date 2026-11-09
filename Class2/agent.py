@@ -64,3 +64,7 @@ def agent(user_message):
 if __name__ == "__main__":
     print(agent("How much are the shoes?"))       # -> uses the tool -> "₹799"
     print(agent("Hi! What can you help with?"))    # -> no tool needed -> just chats
+
+
+
+
