@@ -2,7 +2,7 @@
 # Block 12 — the PROJECT: give your agent a chat UI with Gradio.
 # Run:  python app.py     then open the local link it prints.
 import gradio as gr
-from agent import agent          # the function from agent.py
+from Class2.agent_openai import agent          # the function from agent.py
 
 
 def chat(message, history):

@@ -20,6 +20,7 @@ def get_price(item):
 
 
 # ---- Step 2: describe the tool so the model knows it exists ----
+# Check the tool call in Anthropic Claude vs OpenAI GPT-4o-mini: the tool json spec is different, but the idea is the same: you describe your tools to the model so it can use them.
 tools = [{
     "type": "function",
     "function": {
