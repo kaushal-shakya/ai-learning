@@ -18,7 +18,7 @@ prompt = ChatPromptTemplate.from_messages([
 chain = prompt | model
 
 # we hardcode the history here just to demonstrate
-history = [HumanMessage("My name is Aarav."), AIMessage("Hi Aarav!")]
+history = [HumanMessage("My name is Kaushal."), AIMessage("Hi Kaushal!")]
 
 answer = chain.invoke({"history": history, "question": "What's my name?"})
-print(answer.content)   # -> "Your name is Aarav."  (it "remembered" because we re-sent history)
+print(answer.content)   # -> "Your name is Kaushal."  (it "remembered" because we re-sent history)
